@@ -1,0 +1,50 @@
+[
+  {
+    "jobId": "ggl_mnbkeme5akusr",
+    "status": "completed",
+    "prompt": "Ultra-photorealistic professional jewelry advertisement photograph, slightly low artistic angle, empowered editorial expression, accented with diffused studio lighting, 8K resolution, shot on Hasselbl...",
+    "templateName": "North Indian — 1 ref",
+    "templateId": "north-indian",
+    "outputSize": "portrait4k",
+    "imageUrl": "/api/images?filename=ggl_mnbkeme5akusr.jpg",
+    "imageFilename": "ggl_mnbkeme5akusr.jpg",
+    "thumbnail": "UklGRljmAQBXRUJQVlA4IEzmAQAw0gSdASrpA+kDPkkgjkUioiETvISUKASEsbd+Ltbuu9wl/VfZrHvRQohV4W+/8f/IfuR7GPIf...",
+    "timestamp": 1774777006311
+  },
+  {
+    "jobId": "ggl_mnbk7zl9gp6kd",
+    "status": "completed",
+    "prompt": "Ultra-photorealistic professional jewelry advertisement photograph, subtle 3/4 profile angle, subtle elegant smile, accented with cinematic side lighting, 8K resolution, shot on Hasselblad H6D-400c me...",
+    "templateName": "Custom Model — 4 refs",
+    "templateId": "custom-model",
+    "outputSize": "portrait4k",
+    "imageUrl": "/api/images?filename=ggl_mnbk7zl9gp6kd.jpg",
+    "imageFilename": "ggl_mnbk7zl9gp6kd.jpg",
+    "thumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0d...",
+    "timestamp": 1774776696839
+  },
+  {
+    "jobId": "ggl_mnbk5b1ry6o5y",
+    "status": "completed",
+    "prompt": "Ultra-photorealistic professional jewelry advertisement photograph, eye-level portrait shot, confident piercing gaze, accented with dramatic Rembrandt lighting, 8K resolution, shot on Hasselblad H6D-4...",
+    "templateName": "Custom Model — 1 ref",
+    "templateId": "custom-model",
+    "outputSize": "portrait",
+    "imageUrl": "/api/images?filename=ggl_mnbk5b1ry6o5y.jpg",
+    "imageFilename": "ggl_mnbk5b1ry6o5y.jpg",
+    "thumbnail": "AAAAHGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZgAAAOptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAA...",
+    "timestamp": 1774776571723
+  },
+  {
+    "jobId": "ggl_mnbjwxri1geot",
+    "status": "completed",
+    "prompt": "Ultra-photorealistic professional jewelry advertisement photograph, subtle 3/4 profile angle, confident piercing gaze, accented with cinematic side lighting, 8K resolution, shot on Hasselblad H6D-400c...",
+    "templateName": "Custom Model — 1 ref",
+    "templateId": "custom-model",
+    "outputSize": "portrait4k",
+    "imageUrl": "/api/images/ggl_mnbjwxri1geot.jpg",
+    "imageFilename": "ggl_mnbjwxri1geot.jpg",
+    "thumbnail": "AAAAHGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZgAAAOptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAA...",
+    "timestamp": 1774776181258
+  }
+]

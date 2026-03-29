@@ -1,0 +1,14 @@
+services:
+  nana-jewellery:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - AI_PROVIDER=${AI_PROVIDER:-google}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - MUAPI_API_KEY=${MUAPI_API_KEY}
+      - MUAPI_BASE_URL=${MUAPI_BASE_URL:-https://api.muapi.ai/v1}
+      - AI_MODEL=${AI_MODEL:-pro}
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

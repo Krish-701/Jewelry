@@ -1,0 +1,8 @@
+{
+    "name": "Nana Jewellery AI",
+    "short_name": "NanaAI",
+    "icons": [],
+    "theme_color": "#d4a853",
+    "background_color": "#0a0a0f",
+    "display": "standalone"
+}
