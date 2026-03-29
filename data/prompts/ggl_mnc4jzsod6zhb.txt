@@ -1,0 +1,57 @@
+Ultra-photorealistic professional jewelry advertisement photograph, 8K resolution, shot on Hasselblad H6D-400c medium format camera with 120mm macro lens, RAW file quality, tack-sharp focus on jewelry details. CULTURAL CONTEXT [MANDATORY]: The model reflects a Muslim cultural aesthetic, elegant modest styling suited for Muslim celebrations or Eid, modest and graceful fashion sensibility with rich fabrics and refined jewelry presentation. CRITICAL: The model MUST reflect Muslim cultural aesthetic. This is NON-NEGOTIABLE.. Model: A beautiful Indian Muslim woman wearing elegant modest attire, graceful and dignified appearance, in a refined indoor setting. The model is wearing ALL jewelry pieces from the reference images : necklace, earrings. This is a statement jewelry set featuring a prominent V-shaped necklace and matching drop earrings. Both pieces are intricately designed with clustered and cascading royal blue rhinestones bordered by smaller, clear sparkling stones, set within a textured gold-toned metal base. The necklace culminates in a central drop, and the earrings echo the teardrop shape, creating a coordinated and luxurious look.. EXACT SIZES MANDATORY: earrings: EXACTLY 2 cm. The Gold-toned metal (likely alloy) fashion, partywear, traditional jewelry with Blue rhinestones/crystals, White/clear cubic zirconia or rhinestones, Polished finish, is the focal point — every detail reproduced with photographic accuracy.. 
+╔══════════════════════════════════════════════════════════════════╗
+║           CRITICAL SIZE REQUIREMENTS [ZERO TOLERANCE]            ║
+╚══════════════════════════════════════════════════════════════════╝
+
+The following sizes are ABSOLUTE and NON-NEGOTIABLE:
+1. earrings: 2 cm - EXACT DIMENSION
+
+⚠️  IF YOU DO NOT FOLLOW THESE EXACT SIZES, THE GENERATION FAILS.
+⚠️  DO NOT INTERPRET. DO NOT ADJUST. USE EXACT NUMBERS.
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│  SIZE CONSTRAINT 1: RING
+└─────────────────────────────────────────────────────────────────┘
+
+ABSOLUTE REQUIREMENT: The jewelry MUST be rendered at EXACTLY 2 cm.
+
+WHAT THIS MEANS:
+- Ring diameter should be approximately 1/4 to 1/3 of finger width
+- This is a HARD CONSTRAINT - do not interpret creatively
+- The AI must render the jewelry at this exact dimension
+
+VISUAL REFERENCE GUIDE:
+small: 1.6cm - Small finger, delicate band; medium: 1.8cm - Average adult finger; large: 2.1cm - Larger finger, statement piece
+
+ENFORCEMENT RULES:
+✗ DO NOT make the jewelry larger than specified
+✗ DO NOT make the jewelry smaller than specified  
+✗ DO NOT use artistic license to adjust the size
+✓ MUST use 2 cm as the exact dimension
+✓ MUST maintain proper proportion to the model's body
+
+VERIFICATION CHECK:
+Before finalizing the image, verify:
+1. Is the ring exactly 2 cm?
+2. Does it look proportionate on the model?
+3. Would a jeweler measure it as 2 cm?
+If NO to any question, regenerate with correct size.
+
+
+FINAL SIZE CHECK - ANSWER YES/NO:
+□ Is each piece exactly the specified size? 
+□ Are proportions correct relative to the model?
+□ Would measurements match the input values?
+
+IF ANY ANSWER IS NO → REGENERATE WITH CORRECT SIZES.
+. CRITICAL: The model wears ONLY the referenced jewelry. NO other earrings, necklaces, rings, or accessories unless specified. All other skin areas MUST be bare.. Setting: elegant indoor setting with Islamic architectural elements, soft lighting, peaceful and refined atmosphere. Lighting: soft warm lighting with gentle shadows, serene and dignified ambiance. Pose: elegant classical dance-inspired pose, slight tilt of head, graceful hand gesture (mudra), serene confident expression. Shallow depth of field, professional color grading, magazine-quality, hyperrealistic skin, accurate jewelry reflections. 
+╔══════════════════════════════════════════════════════════════════╗
+║  PRE-GENERATION VERIFICATION CHECKLIST                           ║
+╚══════════════════════════════════════════════════════════════════╝
+□ Religion/Culture: muslim
+□ Background: Template default
+□ Dress Code: Template default
+□ Sizes: earrings=2cm
+
+If any setting above is wrong, STOP and use the correct values.

@@ -1,5 +1,53 @@
 [
   {
+    "jobId": "ggl_mnc4wo1agmtzp",
+    "status": "completed",
+    "prompt": "Ultra-photorealistic professional jewelry advertisement photograph, 8K resolution, shot on Hasselblad H6D-400c medium format camera with 120mm macro lens, RAW file quality, tack-sharp focus on jewelry...",
+    "templateName": "South Indian — 1 ref",
+    "templateId": "south-indian",
+    "outputSize": "portrait",
+    "imageUrl": "/api/images?filename=ggl_mnc4wo1agmtzp.jpg",
+    "imageFilename": "ggl_mnc4wo1agmtzp.jpg",
+    "thumbnail": "UklGRljmAQBXRUJQVlA4IEzmAQAw0gSdASrpA+kDPkkgjkUioiETvISUKASEsbd+Ltbuu9wl/VfZrHvRQohV4W+/8f/IfuR7GPIf...",
+    "timestamp": 1774811440570
+  },
+  {
+    "jobId": "ggl_mnc4jzsod6zhb",
+    "status": "completed",
+    "prompt": "Ultra-photorealistic professional jewelry advertisement photograph, 8K resolution, shot on Hasselblad H6D-400c medium format camera with 120mm macro lens, RAW file quality, tack-sharp focus on jewelry...",
+    "templateName": "South Indian — 1 ref",
+    "templateId": "south-indian",
+    "outputSize": "portrait",
+    "imageUrl": "/api/images?filename=ggl_mnc4jzsod6zhb.jpg",
+    "imageFilename": "ggl_mnc4jzsod6zhb.jpg",
+    "thumbnail": "UklGRljmAQBXRUJQVlA4IEzmAQAw0gSdASrpA+kDPkkgjkUioiETvISUKASEsbd+Ltbuu9wl/VfZrHvRQohV4W+/8f/IfuR7GPIf...",
+    "timestamp": 1774810849286
+  },
+  {
+    "jobId": "ggl_mnc4bztplk0yl",
+    "status": "completed",
+    "prompt": "Ultra-photorealistic professional jewelry advertisement photograph, 8K resolution, shot on Hasselblad H6D-400c medium format camera with 120mm macro lens, RAW file quality, tack-sharp focus on jewelry...",
+    "templateName": "South Indian — 1 ref",
+    "templateId": "south-indian",
+    "outputSize": "portrait",
+    "imageUrl": "/api/images?filename=ggl_mnc4bztplk0yl.jpg",
+    "imageFilename": "ggl_mnc4bztplk0yl.jpg",
+    "thumbnail": "UklGRljmAQBXRUJQVlA4IEzmAQAw0gSdASrpA+kDPkkgjkUioiETvISUKASEsbd+Ltbuu9wl/VfZrHvRQohV4W+/8f/IfuR7GPIf...",
+    "timestamp": 1774810476070
+  },
+  {
+    "jobId": "ggl_mnc3mtgs1ioc5",
+    "status": "completed",
+    "prompt": "Ultra-photorealistic professional jewelry advertisement photograph, slightly low artistic angle, soft natural expression, accented with dramatic Rembrandt lighting, 8K resolution, shot on Hasselblad H...",
+    "templateName": "South Indian — 1 ref",
+    "templateId": "south-indian",
+    "outputSize": "portrait",
+    "imageUrl": "/api/images?filename=ggl_mnc3mtgs1ioc5.jpg",
+    "imageFilename": "ggl_mnc3mtgs1ioc5.jpg",
+    "thumbnail": "UklGRljmAQBXRUJQVlA4IEzmAQAw0gSdASrpA+kDPkkgjkUioiETvISUKASEsbd+Ltbuu9wl/VfZrHvRQohV4W+/8f/IfuR7GPIf...",
+    "timestamp": 1774809301430
+  },
+  {
     "jobId": "ggl_mnbv5shgq1kz0",
     "status": "completed",
     "prompt": "Ultra-photorealistic professional jewelry advertisement photograph, subtle 3/4 profile angle, subtle elegant smile, accented with cinematic side lighting, 8K resolution, shot on Hasselblad H6D-400c me...",

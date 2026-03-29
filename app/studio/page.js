@@ -57,6 +57,8 @@ export default function StudioPage() {
     const [consistencyMode, setConsistencyMode] = useState('exact');
     const [detectedAspectRatio, setDetectedAspectRatio] = useState(null);
 
+
+
     // Handle first image load for auto-ratio detection
     const handleFirstImageLoad = useCallback((dims) => {
         const ratio = detectAspectRatio(dims.width, dims.height);
@@ -92,19 +94,59 @@ export default function StudioPage() {
         }
     }, [images]);
 
-    // Step 4 → 5: Generate
+    // Step 4 → Generate: Background verification then generate
     const handleGenerate = useCallback(async () => {
         setLoading(true);
-        setLoadingMessage(`Starting generation with ${images.length} reference${images.length > 1 ? 's' : ''} • ${OUTPUT_SIZES.find(s => s.id === outputSize)?.label || outputSize}…`);
+        setLoadingMessage('Verifying settings and preparing generation...');
         setError('');
+        
         try {
+            // STEP 1: Background verification (runs automatically)
             const allImages = images.map(img => ({ base64: img.base64, mimeType: img.mimeType }));
+            
+            const verifyRes = await fetch('/api/verify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    images: allImages,
+                    templateId: selectedTemplate,
+                    analysis,
+                    sizes,
+                    customPrompt: selectedTemplate === 'custom' ? customPrompt : undefined,
+                    outputSize,
+                    extraPrompt,
+                    backgroundPreset,
+                    religionPreset,
+                    dressCodePreset,
+                    customModelPhoto: customModelPhoto ? {
+                        base64: customModelPhoto.base64,
+                        mimeType: customModelPhoto.mimeType,
+                    } : null,
+                    consistencyMode,
+                }),
+            });
+            
+            const verifyData = await verifyRes.json();
+            if (!verifyRes.ok) throw new Error(verifyData.error || 'Verification failed');
+            
+            // Log verification to console for debugging
+            console.log('Verification Result:', verifyData.summary);
+            if (verifyData.warnings?.length > 0) {
+                console.warn('Generation Warnings:', verifyData.warnings);
+            }
+            
+            // If verification has critical errors, stop
+            if (!verifyData.verified && verifyData.errors?.length > 0) {
+                throw new Error(`Verification failed: ${verifyData.errors.join(', ')}`);
+            }
+            
+            // STEP 2: Proceed to generation
+            setLoadingMessage(`Starting generation with ${images.length} reference${images.length > 1 ? 's' : ''} • ${OUTPUT_SIZES.find(s => s.id === outputSize)?.label || outputSize}…`);
             
             // Handle auto-ratio
             let effectiveOutputSize = outputSize;
             let aspectRatio = detectedAspectRatio;
             if (outputSize === 'auto' && detectedAspectRatio) {
-                // Map detected ratio to closest output size
                 if (detectedAspectRatio === '1:1') effectiveOutputSize = 'square4k';
                 else if (detectedAspectRatio === '16:9') effectiveOutputSize = 'landscape';
                 else effectiveOutputSize = 'portrait4k';
@@ -414,6 +456,8 @@ export default function StudioPage() {
                         </div>
                     </div>
                 )}
+
+
             </div>
         </div>
     );

@@ -1,0 +1,57 @@
+Ultra-photorealistic professional jewelry advertisement photograph, 8K resolution, shot on Hasselblad H6D-400c medium format camera with 120mm macro lens, RAW file quality, tack-sharp focus on jewelry details. CULTURAL CONTEXT [MANDATORY]: The model reflects a Christian cultural aesthetic, elegant and graceful styling suited for Christian weddings or ceremonies, classic Western-inspired beauty with subtle sophistication. CRITICAL: The model MUST reflect Christian cultural aesthetic. This is NON-NEGOTIABLE.. Model: A beautiful Indian Christian woman wearing elegant attire, with a graceful and modest appearance, subtle makeup, in a refined indoor setting. The model is wearing ALL jewelry pieces from the reference images : necklace, earrings. This is a statement jewelry set featuring a necklace and matching dangle earrings. The set boasts an intricate gold-plated filigree base heavily embellished with sparkling white crystals. Multiple large, round royal blue stones are arranged throughout the design, creating a striking contrast and forming a central pendant on the necklace and a flowing pattern on the earrings.. EXACT SIZES MANDATORY: earrings: EXACTLY 5 cm. The gold-plated alloy traditional/party wear jewelry with blue stones, white crystals, polished finish, is the focal point — every detail reproduced with photographic accuracy.. 
+╔══════════════════════════════════════════════════════════════════╗
+║           CRITICAL SIZE REQUIREMENTS [ZERO TOLERANCE]            ║
+╚══════════════════════════════════════════════════════════════════╝
+
+The following sizes are ABSOLUTE and NON-NEGOTIABLE:
+1. earrings: 5 cm - EXACT DIMENSION
+
+⚠️  IF YOU DO NOT FOLLOW THESE EXACT SIZES, THE GENERATION FAILS.
+⚠️  DO NOT INTERPRET. DO NOT ADJUST. USE EXACT NUMBERS.
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│  SIZE CONSTRAINT 1: RING
+└─────────────────────────────────────────────────────────────────┘
+
+ABSOLUTE REQUIREMENT: The jewelry MUST be rendered at EXACTLY 5 cm.
+
+WHAT THIS MEANS:
+- Ring diameter should be approximately 1/4 to 1/3 of finger width
+- This is a HARD CONSTRAINT - do not interpret creatively
+- The AI must render the jewelry at this exact dimension
+
+VISUAL REFERENCE GUIDE:
+small: 1.6cm - Small finger, delicate band; medium: 1.8cm - Average adult finger; large: 2.1cm - Larger finger, statement piece
+
+ENFORCEMENT RULES:
+✗ DO NOT make the jewelry larger than specified
+✗ DO NOT make the jewelry smaller than specified  
+✗ DO NOT use artistic license to adjust the size
+✓ MUST use 5 cm as the exact dimension
+✓ MUST maintain proper proportion to the model's body
+
+VERIFICATION CHECK:
+Before finalizing the image, verify:
+1. Is the ring exactly 5 cm?
+2. Does it look proportionate on the model?
+3. Would a jeweler measure it as 5 cm?
+If NO to any question, regenerate with correct size.
+
+
+FINAL SIZE CHECK - ANSWER YES/NO:
+□ Is each piece exactly the specified size? 
+□ Are proportions correct relative to the model?
+□ Would measurements match the input values?
+
+IF ANY ANSWER IS NO → REGENERATE WITH CORRECT SIZES.
+. CRITICAL: The model wears ONLY the referenced jewelry. NO other earrings, necklaces, rings, or accessories unless specified. All other skin areas MUST be bare.. Setting: elegant church interior or sophisticated Christian wedding venue with soft lighting, white floral arrangements, refined and peaceful atmosphere. Lighting: soft natural lighting with warm gentle tones, serene and peaceful ambiance. Pose: elegant classical dance-inspired pose, slight tilt of head, graceful hand gesture (mudra), serene confident expression. Shallow depth of field, professional color grading, magazine-quality, hyperrealistic skin, accurate jewelry reflections. 
+╔══════════════════════════════════════════════════════════════════╗
+║  PRE-GENERATION VERIFICATION CHECKLIST                           ║
+╚══════════════════════════════════════════════════════════════════╝
+□ Religion/Culture: christian
+□ Background: Template default
+□ Dress Code: Template default
+□ Sizes: earrings=5cm
+
+If any setting above is wrong, STOP and use the correct values.

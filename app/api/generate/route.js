@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
-import { generateImage, buildJewelryPrompt } from '@/lib/ai-provider';
+import { generateImage } from '@/lib/ai-provider';
 import { getTemplateById } from '@/lib/templates';
 import { saveImage, savePrompt, saveHistoryEntry, updateHistoryEntry } from '@/lib/storage';
+import { verifyAndBuildPrompt, resolveConflicts } from '@/lib/prompt-verifier';
 
 export const maxDuration = 300;
 
@@ -43,24 +44,52 @@ export async function POST(request) {
             }
             : template;
 
-        // Build preset options for prompt generation
-        const presetOptions = {
+        // STEP 1: Resolve conflicts between template and presets
+        const resolved = resolveConflicts({
+            template: effectiveTemplate,
+            templateId,
             backgroundPreset,
             religionPreset,
             dressCodePreset,
+            customModelPhoto,
+            consistencyMode,
+            analysis
+        });
+
+        // STEP 2: Build preset options with conflict resolution
+        const presetOptions = {
+            backgroundPreset: resolved.backgroundPreset,
+            religionPreset: resolved.religionPreset,
+            dressCodePreset: resolved.dressCodePreset,
             hasCustomModelPhoto: !!customModelPhoto,
             consistencyMode,
             sizes,
         };
 
-        // Build prompt — passes extraPrompt + presets so everything influences output
-        const prompt = buildJewelryPrompt(
-            analysis || {},
-            effectiveTemplate,
-            images.length,
+        // STEP 3: Verify and build prompt with full validation
+        const verification = verifyAndBuildPrompt({
+            analysis: analysis || {},
+            template: resolved.template,
+            imageCount: images.length,
             extraPrompt,
             presetOptions
-        );
+        });
+
+        // Log verification for debugging
+        console.log('\n' + '='.repeat(70));
+        console.log('GENERATION VERIFICATION REPORT');
+        console.log('='.repeat(70));
+        console.log('Template:', template.name);
+        console.log('Conflicts resolved:', resolved.conflicts.length);
+        resolved.conflicts.forEach(c => console.log('  -', c.description, '→', c.resolution));
+        console.log('Modifications:', resolved.modifications.length);
+        resolved.modifications.forEach(m => console.log('  -', m));
+        console.log('Verification valid:', verification.isValid);
+        console.log('Warnings:', verification.warnings.length);
+        verification.warnings.forEach(w => console.log('  ⚠️', w));
+        console.log('='.repeat(70) + '\n');
+
+        const prompt = verification.prompt;
 
         // Combine jewelry + custom model images for generation
         const allImages = [...images];

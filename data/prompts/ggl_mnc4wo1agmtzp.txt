@@ -1,0 +1,64 @@
+Ultra-photorealistic professional jewelry advertisement photograph, 8K resolution, shot on Hasselblad H6D-400c medium format camera with 120mm macro lens, RAW file quality, tack-sharp focus on jewelry details. CULTURAL CONTEXT [MANDATORY]: The model reflects a Christian cultural aesthetic, elegant and graceful styling suited for Christian weddings or ceremonies, classic Western-inspired beauty with subtle sophistication. CRITICAL: The model MUST reflect Christian cultural aesthetic. This is NON-NEGOTIABLE.. Model: A beautiful Indian Christian woman wearing elegant attire, with a graceful and modest appearance, subtle makeup, in a refined indoor setting. Outfit [MANDATORY]: Soft pastel green or mint lightweight flowing anarkali in fresh serene tones, fresh and premium look suited for nature-inspired or lighter jewelry collections. The model is wearing ALL jewelry pieces from the reference images : necklace, earrings. This is a V-shaped necklace and matching long chandelier earring set. The intricate metalwork is gold-plated and features a dense cluster pattern of large, round blue crystals and smaller clear cubic zirconia stones. A prominent blue crystal drop hangs from the center tip of the necklace and the bottom of each earring.. CRITICAL SIZE REQUIREMENTS: earrings: EXACTLY 3 cm. The gold plated metal fashion jewelry with blue glass crystals, clear cubic zirconia, polished finish, is the focal point — every detail reproduced with photographic accuracy.. 
+╔══════════════════════════════════════════════════════════════════╗
+║     CRITICAL SIZE REQUIREMENTS - ABSOLUTE AND NON-NEGOTIABLE     ║
+╚══════════════════════════════════════════════════════════════════╝
+
+MANDATORY DIMENSIONS - DO NOT DEVIATE:
+  1. earrings: 3 cm (EXACT - NO VARIATION)
+
+⚠️  FAILURE TO FOLLOW THESE SIZES = INVALID GENERATION
+⚠️  DO NOT INTERPRET CREATIVELY
+⚠️  USE THE EXACT NUMBERS PROVIDED
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│  SIZE CONSTRAINT 1: EARRINGS         │
+└─────────────────────────────────────────────────────────────────┘
+
+JEWELRY TYPE: RING
+ABSOLUTE REQUIREMENT: The earrings MUST be rendered at EXACTLY 3 cm.
+
+WHAT THIS MEANS:
+- Ring diameter should be approximately 1/4 to 1/3 of finger width
+BODY RATIO REFERENCE: Ring diameter 3cm is approximately 150% of average finger width.
+- This is a HARD CONSTRAINT - do not interpret creatively
+- The AI must render the jewelry at this exact dimension
+
+VISUAL REFERENCE GUIDE:
+  • small: 1.6cm - Small finger, delicate band
+  • medium: 1.8cm - Average adult finger
+  • large: 2.1cm - Larger finger, statement piece
+
+ENFORCEMENT RULES - FOLLOW EXACTLY:
+✗ DO NOT make the earrings larger than 3 cm
+✗ DO NOT make the earrings smaller than 3 cm
+✗ DO NOT use artistic license to adjust the size
+✓ MUST render earrings at exactly 3 cm
+✓ MUST maintain proper proportion to the model's body
+
+SIZE VERIFICATION CHECKLIST:
+Before finalizing the image, verify:
+1. Is the earrings exactly 3 cm? (Measure it)
+2. Does the earrings look proportionate on the model's body?
+3. Would a jeweler with a ruler measure it as 3 cm?
+4. For reference: a credit card is 8.5cm wide, a finger is ~2cm wide
+If NO to any question, regenerate with correct size.
+
+
+PRE-FINALIZATION CHECKLIST:
+  ☐ Each piece is exactly the specified size
+  ☐ Proportions are correct relative to model's body
+  ☐ Measurements would match input values with a ruler
+  ☐ Size is physically accurate and realistic
+
+IF ANY CHECK FAILS → REGENERATE WITH CORRECT SIZES.
+. CRITICAL: The model wears ONLY the referenced jewelry. NO other earrings, necklaces, rings, or accessories unless specified. All other skin areas MUST be bare.. BACKGROUND [MANDATORY - USER SELECTED]: Polished rich dark or light wood flooring against a simple cream neutral wall, warm grounded luxury feel that suits both traditional and contemporary Indian jewelry designs. CRITICAL: Use EXACTLY this background. Do NOT use temple or religious setting unless specified.. Lighting: soft natural lighting with warm gentle tones, serene and peaceful ambiance. Pose: elegant classical dance-inspired pose, slight tilt of head, graceful hand gesture (mudra), serene confident expression. Shallow depth of field, professional color grading, magazine-quality, hyperrealistic skin, accurate jewelry reflections. 
+╔══════════════════════════════════════════════════════════════════╗
+║  PRE-GENERATION VERIFICATION CHECKLIST                           ║
+╚══════════════════════════════════════════════════════════════════╝
+□ Religion/Culture: christian
+□ Background: wood-neutral
+□ Dress Code: mint-anarkali
+□ Sizes: earrings=3cm
+
+If any setting above is wrong, STOP and use the correct values.
