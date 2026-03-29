@@ -1562,3 +1562,152 @@ input, textarea, select {
   .preset-dropdowns-grid { grid-template-columns: 1fr; }
   .consistency-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ── Size Input Component ───────────────────── */
+.size-input-panel {
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.size-input-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.size-input-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast);
+}
+
+.size-input-row:hover {
+  border-color: var(--border-gold);
+}
+
+.size-input-row:focus-within {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 2px rgba(201, 151, 62, 0.1);
+}
+
+.size-input-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.jewelry-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.size-input-label > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.jewelry-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.jewelry-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.size-input-field-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.size-input-field {
+  width: 120px;
+  padding: 0.6rem 0.8rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  transition: border-color var(--transition-fast);
+}
+
+.size-input-field:focus {
+  border-color: var(--accent-gold);
+  outline: none;
+}
+
+.size-input-field::placeholder {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.size-unit-select {
+  padding: 0.6rem 2rem 0.6rem 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%239494b0' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.size-unit-select:focus {
+  border-color: var(--accent-gold);
+  outline: none;
+}
+
+.size-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  max-width: 200px;
+  line-height: 1.4;
+}
+
+.size-summary {
+  text-align: center;
+}
+
+/* Responsive for Size Input */
+@media (max-width: 768px) {
+  .size-input-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .size-input-field-group {
+    width: 100%;
+  }
+  
+  .size-input-field {
+    flex: 1;
+  }
+  
+  .size-hint {
+    max-width: none;
+    text-align: center;
+  }
+}

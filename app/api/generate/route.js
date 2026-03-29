@@ -11,6 +11,7 @@ export async function POST(request) {
             images,
             templateId,
             analysis,
+            sizes = {},
             customPrompt,
             outputSize = 'portrait',
             extraPrompt = '',
@@ -49,6 +50,7 @@ export async function POST(request) {
             dressCodePreset,
             hasCustomModelPhoto: !!customModelPhoto,
             consistencyMode,
+            sizes,
         };
 
         // Build prompt — passes extraPrompt + presets so everything influences output

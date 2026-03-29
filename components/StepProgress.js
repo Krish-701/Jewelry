@@ -3,8 +3,9 @@
 const STEPS = [
     { num: 1, label: 'Upload Jewelry' },
     { num: 2, label: 'AI Analysis' },
-    { num: 3, label: 'Choose Template' },
-    { num: 4, label: 'Generate' },
+    { num: 3, label: 'Size Input' },
+    { num: 4, label: 'Choose Template' },
+    { num: 5, label: 'Generate' },
 ];
 
 export default function StepProgress({ currentStep }) {

@@ -7,6 +7,7 @@ import TemplateSelector from '@/components/TemplateSelector';
 import PresetDropdowns from '@/components/PresetDropdowns';
 import CustomModelUpload from '@/components/CustomModelUpload';
 import JewelryAnalysis from '@/components/JewelryAnalysis';
+import SizeInput from '@/components/SizeInput';
 import ResultGallery from '@/components/ResultGallery';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import StepProgress from '@/components/StepProgress';
@@ -36,6 +37,7 @@ export default function StudioPage() {
     const [step, setStep] = useState(1);
     const [images, setImages] = useState([]);
     const [analysis, setAnalysis] = useState(null);
+    const [sizes, setSizes] = useState({});
     const [selectedTemplate, setSelectedTemplate] = useState('south-indian');
     const [customPrompt, setCustomPrompt] = useState({});
     const [extraPrompt, setExtraPrompt] = useState('');
@@ -81,6 +83,7 @@ export default function StudioPage() {
             const data = await res.json();
             if (!res.ok) throw new Error(data.error || 'Analysis failed');
             setAnalysis(data.analysis);
+            setSizes({}); // Reset sizes for new analysis
             setStep(2);
         } catch (err) {
             setError(err.message);
@@ -89,7 +92,7 @@ export default function StudioPage() {
         }
     }, [images]);
 
-    // Step 3 → 4: Generate
+    // Step 4 → 5: Generate
     const handleGenerate = useCallback(async () => {
         setLoading(true);
         setLoadingMessage(`Starting generation with ${images.length} reference${images.length > 1 ? 's' : ''} • ${OUTPUT_SIZES.find(s => s.id === outputSize)?.label || outputSize}…`);
@@ -114,6 +117,7 @@ export default function StudioPage() {
                     images: allImages,
                     templateId: selectedTemplate,
                     analysis,
+                    sizes,
                     customPrompt: selectedTemplate === 'custom' ? customPrompt : undefined,
                     outputSize: effectiveOutputSize,
                     originalOutputSize: outputSize,
@@ -181,16 +185,17 @@ export default function StudioPage() {
                 }
                 return updatedResults;
             });
-            setStep(4);
+            setStep(5);
         } catch (err) {
             setError(err.message);
         } finally {
             setLoading(false);
         }
-    }, [images, selectedTemplate, analysis, customPrompt, outputSize, extraPrompt, backgroundPreset, religionPreset, dressCodePreset, customModelPhoto, consistencyMode, router]);
+    }, [images, selectedTemplate, analysis, sizes, customPrompt, outputSize, extraPrompt, backgroundPreset, religionPreset, dressCodePreset, customModelPhoto, consistencyMode, router]);
 
     const handleReset = () => {
         setStep(1); setImages([]); setAnalysis(null);
+        setSizes({});
         setResults([]); setError(''); setPromptPreview('');
         setExtraPrompt(''); setOutputSize('portrait');
         setBackgroundPreset(null); setReligionPreset(null);
@@ -263,13 +268,40 @@ export default function StudioPage() {
 
                         <div className="step-nav">
                             <button className="btn btn-secondary" onClick={() => setStep(1)}>← Back</button>
-                            <button className="btn btn-primary" onClick={() => setStep(3)}>🎭 Choose Template →</button>
+                            <button className="btn btn-primary" onClick={() => setStep(3)}>📏 Set Sizes →</button>
                         </div>
                     </div>
                 )}
 
-                {/* ── STEP 3: Template + Options ─────────────────── */}
+                {/* ── STEP 3: Size Input ─────────────────────────── */}
                 {step === 3 && (
+                    <div className="animate-fade-in">
+                        <div className="section-header" style={{ marginBottom: '2rem' }}>
+                            <h2>Set <span className="gradient-text">Jewelry Sizes</span></h2>
+                            <p>Enter actual dimensions for accurate size representation on the model</p>
+                        </div>
+
+                        <div className="ref-thumbnails">
+                            {images.map(img => (
+                                <div key={img.id} className="ref-thumb glass-card">
+                                    <img src={img.preview} alt={img.name} />
+                                </div>
+                            ))}
+                        </div>
+
+                        <SizeInput analysis={analysis} sizes={sizes} onSizesChange={setSizes} />
+
+                        <div className="step-nav">
+                            <button className="btn btn-secondary" onClick={() => setStep(2)}>← Back to Analysis</button>
+                            <button className="btn btn-primary" onClick={() => setStep(4)}>
+                                🎭 Choose Template →
+                            </button>
+                        </div>
+                    </div>
+                )}
+
+                {/* ── STEP 4: Template + Options ─────────────────── */}
+                {step === 4 && (
                     <div className="animate-fade-in">
                         <div className="section-header" style={{ marginBottom: '2rem' }}>
                             <h2>Choose <span className="gradient-text">Template & Options</span></h2>
@@ -350,7 +382,7 @@ export default function StudioPage() {
                         </div>
 
                         <div className="step-nav">
-                            <button className="btn btn-secondary" onClick={() => setStep(2)}>← Back</button>
+                            <button className="btn btn-secondary" onClick={() => setStep(3)}>← Back to Sizes</button>
                             <button className="btn btn-primary" onClick={handleGenerate}>
                                 ✨ Generate — {images.length} Ref{images.length > 1 ? 's' : ''} · {OUTPUT_SIZES.find(s => s.id === outputSize)?.label}
                             </button>
@@ -358,8 +390,8 @@ export default function StudioPage() {
                     </div>
                 )}
 
-                {/* ── STEP 4: Results ────────────────────────────── */}
-                {step === 4 && (
+                {/* ── STEP 5: Results ────────────────────────────── */}
+                {step === 5 && (
                     <div className="animate-fade-in">
                         <div className="section-header" style={{ marginBottom: '2rem' }}>
                             <h2>Your <span className="gradient-text">Results</span></h2>
@@ -376,7 +408,7 @@ export default function StudioPage() {
                         )}
 
                         <div className="step-nav" style={{ marginTop: '2rem' }}>
-                            <button className="btn btn-secondary" onClick={() => setStep(3)}>← Change Template</button>
+                            <button className="btn btn-secondary" onClick={() => setStep(4)}>← Change Template</button>
                             <button className="btn btn-primary" onClick={handleGenerate}>🔄 Regenerate</button>
                             <button className="btn btn-secondary" onClick={handleReset}>🆕 Start New</button>
                         </div>
